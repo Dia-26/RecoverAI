@@ -374,8 +374,4 @@ RECOVER REVENUE
 
 ### **Every failed payment is not a lost payment.**
 
----
 
-### 📌 Status
-
-`Hackathon Prototype` • `AI Powered` • `Razorpay Test Environment`
