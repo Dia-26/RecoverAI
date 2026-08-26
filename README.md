@@ -1,94 +1,48 @@
-⚡ AI Revenue Recovery
+# ⚡ AI Revenue Recovery
 
-An AI-powered payment recovery engine that turns failed payments into recovered revenue.
+**Turn failed payments into recovered revenue.**
 
-Instead of blindly retrying every failed payment, it analyzes why the payment failed, predicts the recovery probability, and chooses the best next action.
+An AI-powered payment recovery engine that analyzes failed transactions, predicts their recovery probability, and chooses the best next action instead of blindly retrying.
 
-🚨 Problem
+### 💡 How It Works
 
-Most systems follow:
-
-Payment Failed → Retry → Retry Again → Give Up
-
-This causes unnecessary retries, poor customer experience, and lost revenue.
-
-💡 Solution
-
-Our system asks:
-
-“Why did this payment fail, how likely is it to recover, and what should we do next?”
-
-It evaluates:
-
-Failure reason
-Transaction amount
-Customer history
-Previous retries
-Time since failure
-Payment behavior
-
-Then it generates a recovery score and recommends:
-
-🔄 Retry | ⏳ Wait | 💳 Alternative Payment | 🛑 Stop | 👤 Manual Review
-
-🤖 Example
-Payment: ₹4,999
-Failure: Network Error
-Previous Retries: 1
-
-Recovery Probability: 91%
-AI Decision: Retry
-
-→ ₹4,999 Recovered ✅
-🏗️ Architecture
-Payment Failure
-      ↓
-Analyze Context
-      ↓
-AI Recovery Engine
-      ↓
-Recovery Probability
-      ↓
-Choose Action
-      ↓
-Retry / Wait / Alternative
-      ↓
-Track Outcome
-      ↓
-Revenue Recovered 💰
-📊 Dashboard
-
-Merchants can see:
-
-Failed Revenue
-Recoverable Revenue
-Recovered Revenue
-Recovery Rate
-AI Recommendations
-🛠️ Tech Stack
-
-Frontend: React, Vite, Tailwind, Recharts
-Backend: Node.js, Express
-AI: Python + ML/LLM + Rules
-Database: DynamoDB / MongoDB
-Payments: Razorpay Test APIs
-
-🎬 Demo
-Simulate Payment
-      ↓
+```text
 Payment Fails
-      ↓
-AI Analyzes It
+     ↓
+AI Analyzes Failure
+     ↓
+Recovery Probability
+     ↓
+Best Action
+     ↓
+Retry / Wait / Alternative Payment
+     ↓
+Revenue Recovered 💰
+```
+
+### 🤖 Example
+
+```text
+₹4,999 Payment
+Network Error
       ↓
 91% Recovery Probability
       ↓
-AI Recommends Retry
-      ↓
-Payment Succeeds
+AI: Retry
       ↓
 ₹4,999 Recovered ✅
-🎯 Core Idea
+```
 
-Don't retry more. Retry smarter.
+### 🛠️ Tech Stack
 
-Every failed payment is not a lost payment.
+**Frontend:** React · Vite · Tailwind
+**Backend:** Node.js · Express
+**AI:** Python · ML/LLM
+**Database:** DynamoDB / MongoDB
+**Payments:** Razorpay Test APIs
+
+### 🎯 Core Idea
+
+> **Don't retry more. Retry smarter.**
+
+**Every failed payment is not a lost payment.**
